@@ -15,7 +15,9 @@ class min_heap(heap):
     self.size+=1
   def Print(self):
         print(self.heap)
-
+  def insert_list(self,l):
+    for el in l:
+      self.insert(el)
 if __name__ == "__main__":
   _heap = min_heap()
   _heap.insert(1)
